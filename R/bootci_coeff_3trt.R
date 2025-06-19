@@ -70,7 +70,7 @@ bootci_coeff_3trt <- function(T1, T2, t.seq, mediator, outcome, t.est, original.
     y.boot <- y[,index.sample]
     T1.boot <- T1[index.sample]
     T2.boot <- T2[index.sample]
-    deltat.boot <- max(diff(t.seq))/2
+    deltat.boot <- 0
     
     result.boot <- tvmcurve_3trt(T1.boot, T2.boot, t.seq, x.boot, y.boot, t.est)
     storage.boot1[c1,] <- result.boot$hat.alpha1
