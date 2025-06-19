@@ -26,7 +26,7 @@
 tvmcurve_3trt<-function(T1, T2, t.seq, x, y, t.est)
 {
   
-  deltat <- max(diff(t.seq))/2
+  deltat <- 0
   #temp.coeff stores all the estimated coefficient values at t-seq
   t.coeff <- NULL
   for(l in 2:length(t.seq))
