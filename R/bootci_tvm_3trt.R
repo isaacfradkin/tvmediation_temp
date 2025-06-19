@@ -30,7 +30,7 @@ bootci_tvm_3trt <- function(boot.sample, orig.data, t.est)
   T1 <- orig.data$T1
   T2 <- orig.data$T2
   t.seq <- orig.data$t.seq
-  deltat <- max(diff(t.seq))/2
+  deltat <- 0
   result.org <- tvmcurve_3trt(T1, T2, t.seq, x, y, t.est)
 
   original.mediation1 <- (result.org$hat.mediation1)
