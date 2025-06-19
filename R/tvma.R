@@ -142,7 +142,8 @@ tvma <- function(treatment, t.seq, mediator, outcome, t.est = t.seq, plot = FALS
       outcome <- outcome[,index]
       mediator <- mediator[,index]
       
-      deltat <- max(diff(t.seq))/2  # half the time between two measures
+      #deltat <- max(diff(t.seq))/2  # half the time between two measures
+      deltat <- 0 # no lag
       N <- length(treatment)
       t.coeff <- NULL
       
